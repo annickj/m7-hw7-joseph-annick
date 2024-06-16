@@ -26,19 +26,19 @@ body {
   background-size: cover;
   color: rgb(26, 89, 90);
   text-align: center;
-  padding: 10px 10px;
+  padding: 10px 20px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
- span::first-letter {
+article p:first-of-type::first-letter {
   float: left;
   line-height: 35px;
-  font-size: 55px;
+  font-size: 75px;
   color: #06b3bc;
-
 }
+
 h1 {
   font-size: 2.5rem;
 }
@@ -146,7 +146,7 @@ footer {
 /* tooltip code below */
 
 span.tooltip {
-  color: red);
+  color: red;
   position: relative;
   cursor: pointer;
 }
@@ -170,17 +170,13 @@ span.tooltip span {
   left: 50%;
   transform: translateX(-50%);
   background-color: black;
-color: #FFFFFF;
-text-align: center;
-border-radius: 5px;
-padding: 5px 10px;
-z-index: 1;
-width: max-content;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  z-index: 1;
+  width: max-content;
   max-width: 200px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.3s;
-
 }
 
 /* styling for tooltip bubble arrow */
@@ -193,4 +189,5 @@ span.tooltip span::after {
   border-width: 5px;
   border-style: solid;
   border-color: black transparent transparent transparent;
+
 }
